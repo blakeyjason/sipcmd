@@ -241,7 +241,7 @@ bool LocalEndPoint::OnWriteMediaData(
 }
 
 Manager::Manager() : localep(NULL), sipep(NULL), h323ep(NULL), 
-  listenmode(false), listenerup(false), pauseBeforeDialing(false),
+  listenmode(false), listenerup(false), pauseBeforeDialing(true),
   mediaFilter("*")
 {
   std::cout << __func__  << std::endl;
